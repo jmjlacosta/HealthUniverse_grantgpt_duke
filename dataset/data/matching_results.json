@@ -1,0 +1,1495 @@
+{
+    "kp": {
+        "0": {
+            "NCT06122077": {
+                "inclusion": {
+                    "0": [
+                        "The patient is 53 years old, which meets the age criterion of being 50 years or older.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "1": [
+                        "The patient has a 50 pack-year history of smoking, which meets the criterion of having a cumulative smoking history of \u2265 20 pack-year.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "2": [
+                        "The patient note states that the patient will provide informed consent and comply with the trial protocol, indicating comprehension and willingness to sign necessary documents.",
+                        [
+                            4
+                        ],
+                        "included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient note does not mention any active therapy for cancer, and there is no indication that the patient is undergoing such treatment. It is unlikely that a patient note would omit such significant information if it were true.",
+                        [],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "The patient note does not mention any history of malignancy within the prior 5 years. Given the importance of this information, it is unlikely that it would be omitted if it were true.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "There is no mention of any history of organ, tissue, or bone marrow transplantation in the patient note. Such a significant medical history is unlikely to be omitted.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "The patient note does not mention any lung cancer screening or chest CT scan in the past 12 months. This is significant information that would likely be included if it were true.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "The patient note does not mention any signs or symptoms of lung cancer such as hemoptysis, superior vena cava syndrome, Cushing syndrome, or Pancoast syndrome. These are significant symptoms that would likely be noted if present.",
+                        [],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "There is no mention of a blood transfusion in the 30 days preceding enrollment in the patient note. Such a procedure is significant and would likely be documented.",
+                        [],
+                        "not excluded"
+                    ],
+                    "6": [
+                        "The patient is a 53-year-old man, and there is no mention of pregnancy. This criterion is not applicable to the patient.",
+                        [],
+                        "not applicable"
+                    ],
+                    "7": [
+                        "The patient note does not mention participation in another Freenome-sponsored clinical study. This is specific information that would likely be included if true.",
+                        [],
+                        "not excluded"
+                    ],
+                    "8": [
+                        "The patient note does not mention participation in a clinical research study with an experimental medication in the past 60 days. This is significant information that would likely be included if true.",
+                        [],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "The patient note does not mention any condition that would, in the opinion of the Investigator, preclude enrollment. Without specific details, it is assumed there is no such condition.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT05166889": {
+                "inclusion": {
+                    "0": [
+                        "The patient is 53 years old and capable of giving informed consent.",
+                        [
+                            1,
+                            4
+                        ],
+                        "included"
+                    ],
+                    "1": [
+                        "The patient has a documented diagnosis of COPD, as mentioned in the note.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "2": [
+                        "There is no information about post-BD FEV1/FVC or post-BD FEV1 values in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "The patient had a recent hospitalization for a COPD exacerbation, but the note does not specify the number of exacerbations in the past 12 months.",
+                        [
+                            1
+                        ],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "The patient is on inhaled therapy, but the note does not specify if the dose has been stable for at least 3 months.",
+                        [
+                            2
+                        ],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "The patient has a 50 pack-year smoking history, which meets the criterion.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "6": [
+                        "There is no information about the CAT total score or specific scores for phlegm and cough items.",
+                        [],
+                        "not enough information"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient has severe COPD, and there is no mention of any other clinically important pulmonary disease.",
+                        [
+                            1
+                        ],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "There is no mention of any radiological findings suggestive of a respiratory disease other than COPD.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "There is no mention of a current diagnosis of asthma, prior history of asthma, or asthma-COPD overlap.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "There is no mention of any unstable disorder that could affect safety, study findings, or the participant's ability to complete the study.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "The patient was hospitalized for a COPD exacerbation, but the timing of this hospitalization relative to randomization is not specified.",
+                        [
+                            1
+                        ],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "There is no mention of an active significant infection, pneumonia, or a medical condition that predisposes the participant to infection within the specified time frame.",
+                        [],
+                        "not excluded"
+                    ],
+                    "6": [
+                        "There is no mention of suspicion of, or confirmed, ongoing SARS-CoV-2 infection.",
+                        [],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "There is no mention of significant COVID-19 illness within the 6 months prior to enrolment.",
+                        [],
+                        "not excluded"
+                    ],
+                    "8": [
+                        "There is no mention of an unstable cardiovascular disorder.",
+                        [],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "There is no mention of a diagnosis of cor pulmonale, pulmonary arterial hypertension, or right ventricular failure.",
+                        [],
+                        "not excluded"
+                    ],
+                    "10": [
+                        "There is no mention of a history of known immunodeficiency disorder, including a positive test for HIV-1 or HIV 2.",
+                        [],
+                        "not excluded"
+                    ],
+                    "11": [
+                        "There is no mention of a history of positive test or treatment for hepatitis B or hepatitis C.",
+                        [],
+                        "not excluded"
+                    ],
+                    "12": [
+                        "Liver function tests are normal, and there is no evidence of active liver disease.",
+                        [
+                            3
+                        ],
+                        "not excluded"
+                    ],
+                    "13": [
+                        "There is no mention of current or recent malignancy.",
+                        [],
+                        "not excluded"
+                    ],
+                    "14": [
+                        "There is no mention of active TB.",
+                        [],
+                        "not excluded"
+                    ],
+                    "15": [
+                        "There is no mention of previous receipt of tozorakimab.",
+                        [],
+                        "not excluded"
+                    ],
+                    "16": [
+                        "There is no mention of clinically significant abnormal findings in physical examination, vital signs, ECG, or laboratory testing.",
+                        [],
+                        "not excluded"
+                    ],
+                    "17": [
+                        "There is no mention of active vaping or use of smoked marijuana within the specified time frame.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT05742802": {
+                "inclusion": {
+                    "0": [
+                        "The criterion requires participants to have completed the treatment period and not been prematurely discontinued from IP in the predecessor studies. There is no information in the patient note about participation in any predecessor studies.",
+                        [],
+                        "not enough information"
+                    ],
+                    "1": [
+                        "The criterion requires participants to have received their last dose of IP in the predecessor studies within the previous 12 weeks and not been withdrawn from the predecessor study. There is no information in the patient note about participation in any predecessor studies.",
+                        [],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "The criterion is not applicable as it pertains to females of childbearing potential, and the patient is a 53-year-old man.",
+                        [
+                            1
+                        ],
+                        "not applicable"
+                    ],
+                    "3": [
+                        "The criterion is not applicable as it pertains to females of childbearing potential, and the patient is a 53-year-old man.",
+                        [
+                            1
+                        ],
+                        "not applicable"
+                    ],
+                    "4": [
+                        "The patient note states that the patient will provide informed consent and comply with the trial protocol without any practical issues, which meets the criterion.",
+                        [
+                            4
+                        ],
+                        "included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The criterion is broad and subjective, requiring the investigator's opinion. The patient has severe COPD and a history of exacerbations, but there is no indication in the note that the investigator has deemed the patient at risk or inappropriate for the study.",
+                        [
+                            1
+                        ],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "There is no information in the patient note indicating that the patient meets criteria for IP discontinuation as judged by the Investigator or the Sponsor.",
+                        [],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "The patient note does not mention concurrent enrollment in other interventional clinical studies or treatment with another investigational product, except for the OBERON and TITANIA studies.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "The patient note does not mention any known history of severe allergic reactions to monoclonal or polyclonal antibodies, or allergies to any component of the investigational product formulation.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "The patient is on medications for COPD, but there is no mention of chronic use of immunosuppressive medications, systemic corticosteroids, or biologics.",
+                        [
+                            2
+                        ],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "There is no information in the patient note indicating the patient's involvement in the planning and/or conduct of the study.",
+                        [],
+                        "not excluded"
+                    ],
+                    "6": [
+                        "The patient note states that the patient will provide informed consent and comply with the trial protocol without any practical issues.",
+                        [
+                            4
+                        ],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT05595642": {
+                "inclusion": {
+                    "0": [
+                        "The patient has a documented diagnosis of COPD, as mentioned in sentence 1.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "1": [
+                        "The patient had a recent COPD exacerbation requiring hospitalization, but there is no information on whether there were 2 or more exacerbations in the past 12 months.",
+                        [
+                            1
+                        ],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "There is no information on the patient's post-bronchodilator FEV1 percentage.",
+                        [],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "There is no information on the patient's post-bronchodilator FEV1/FVC ratio.",
+                        [],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "There is no information on the patient's mMRC score.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "The patient is a former smoker with a 50 pack-year history, which meets the criterion.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "6": [
+                        "The patient is on optimized COPD maintenance therapy with ICS, LABA, and LAMA, but there is no information on the duration of this therapy.",
+                        [
+                            2
+                        ],
+                        "not enough information"
+                    ],
+                    "7": [
+                        "There is no information on a recent chest X-ray or CT scan.",
+                        [],
+                        "not enough information"
+                    ],
+                    "8": [
+                        "There is no mention of a current diagnosis of asthma.",
+                        [],
+                        "included"
+                    ],
+                    "9": [
+                        "There is no mention of any other clinically significant pulmonary disease besides COPD.",
+                        [],
+                        "included"
+                    ],
+                    "10": [
+                        "There is no mention of 1-antitrypsin deficiency.",
+                        [],
+                        "included"
+                    ],
+                    "11": [
+                        "There is no mention of long-term oxygen treatment at > 4.0 liters/minute.",
+                        [],
+                        "included"
+                    ],
+                    "12": [
+                        "There is no mention of lung volume reduction surgery or procedure within the past 12 months.",
+                        [],
+                        "included"
+                    ],
+                    "13": [
+                        "There is no mention of participation in an intensive COPD rehabilitation program.",
+                        [],
+                        "included"
+                    ],
+                    "14": [
+                        "There is no mention of a history of lung transplant.",
+                        [],
+                        "included"
+                    ],
+                    "15": [
+                        "The patient was hospitalized for a COPD exacerbation, but there is no mention of an infection resulting in hospital admission or antibiotic treatment within the past 4 weeks.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "16": [
+                        "There is no mention of an upper or lower respiratory tract infection within the past 4 weeks.",
+                        [],
+                        "included"
+                    ],
+                    "17": [
+                        "There is no mention of treatment with corticosteroids within the past 4 weeks.",
+                        [],
+                        "included"
+                    ],
+                    "18": [
+                        "There is no mention of initiation or change in non-biologic immunomodulatory or immunosuppressive therapy within the past 3 months.",
+                        [],
+                        "included"
+                    ],
+                    "19": [
+                        "There is no mention of unstable cardiac disease, myocardial infarction, or heart failure within the past 12 months.",
+                        [],
+                        "included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The exclusion criteria are not provided in the clinical trial information, so there is no basis to evaluate the patient's eligibility against specific criteria.",
+                        [],
+                        "not enough information"
+                    ]
+                }
+            },
+            "NCT06283966": {
+                "inclusion": {
+                    "0": [
+                        "The patient is a 53-year-old male, which falls within the age range of 40 to 80 years.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "1": [
+                        "There is no information in the patient note about the patient's ability to demonstrate acceptable MDI administration technique.",
+                        [],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "The patient has a diagnosis of severe COPD, but there is no information about a post-bronchodilator FEV1/FVC ratio.",
+                        [
+                            1
+                        ],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "The patient is a current smoker with a 50 pack-year history, which meets the criterion of at least 10 pack-years.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "4": [
+                        "There is no information about the patient's baseline peripheral blood eosinophil count.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "There is no information about the patient's CAT score.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "There is no information about the patient's cardiovascular disease or risk factors.",
+                        [],
+                        "not enough information"
+                    ],
+                    "7": [
+                        "The patient is willing to comply with the trial protocol, which implies willingness to adjust COPD therapy.",
+                        [
+                            4
+                        ],
+                        "included"
+                    ],
+                    "8": [
+                        "The patient is willing to comply with the trial protocol, which implies willingness to visit the study site or participate in virtual visits.",
+                        [
+                            4
+                        ],
+                        "included"
+                    ],
+                    "9": [
+                        "The patient is male, so the criterion regarding female participants is not applicable.",
+                        [],
+                        "not applicable"
+                    ],
+                    "10": [
+                        "The patient is capable of giving signed informed consent and complying with the protocol.",
+                        [
+                            4
+                        ],
+                        "included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient has COPD, but there is no mention of asthma, asthma-COPD overlap, or any other chronic respiratory diseases listed in the exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "There is no mention of end-stage renal disease or renal replacement therapy in the patient note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "There is no mention of a history of heart or lung transplant or being listed for such a transplant in the patient note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "There is no mention of an implanted left ventricular assist device or plans for such an implant in the patient note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "There is no mention of a history of lung cancer or treatment for lung cancer in the patient note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "There is no mention of unstable or life-threatening cardiac disease, MI, or unstable angina in the patient note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "6": [
+                        "The patient had a COPD exacerbation 4 days ago, which is less than 8 weeks prior to Visit 1.",
+                        [
+                            1
+                        ],
+                        "excluded"
+                    ],
+                    "7": [
+                        "There is no mention of any life-threatening condition with a life expectancy less than 5 years in the patient note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "8": [
+                        "The patient is currently on maintenance ICS treatment (fluticasone), which is within the past 12 months.",
+                        [
+                            2
+                        ],
+                        "excluded"
+                    ],
+                    "9": [
+                        "The patient note states that the patient will comply with the trial protocol, suggesting no issues with prohibited medications.",
+                        [
+                            4
+                        ],
+                        "not excluded"
+                    ],
+                    "10": [
+                        "There is no mention of participation in another clinical study in the patient note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "11": [
+                        "There is no mention of hypersensitivity to LAMA, LABA, or ICS in the patient note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "12": [
+                        "There is no mention of involvement in the planning and/or conduct of the study in the patient note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "13": [
+                        "The patient note states that the patient will comply with the trial protocol, suggesting no issues with compliance.",
+                        [
+                            4
+                        ],
+                        "not excluded"
+                    ],
+                    "14": [
+                        "There is no mention of previous randomization in the present study in the patient note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "15": [
+                        "The exclusion criterion is for females only, and the patient is a male.",
+                        [],
+                        "not applicable"
+                    ]
+                }
+            },
+            "NCT05612035": {
+                "inclusion": {
+                    "0": [
+                        "The patient note does not mention pulmonary hypertension (PH), which is required for this criterion. If the patient had PH, it would likely be mentioned due to its medical significance.",
+                        [],
+                        "not included"
+                    ],
+                    "1": [
+                        "There is no mention of a right heart catheterization (RHC) in the patient note. If the patient had undergone RHC, it would likely be documented.",
+                        [],
+                        "not included"
+                    ],
+                    "2": [
+                        "The patient note does not mention pulmonary function testing (PFT) results. If the patient had a physician diagnosis based on PFT, it would likely be included.",
+                        [],
+                        "not included"
+                    ],
+                    "3": [
+                        "The patient note does not provide information about the WHO Functional Class assessment.",
+                        [],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "The patient note does not mention the use of supplemental oxygen.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "The patient is on stable COPD-specific therapy as indicated by the medications listed.",
+                        [
+                            1,
+                            2
+                        ],
+                        "included"
+                    ],
+                    "6": [
+                        "There is no mention of PDE5 inhibitor use in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "7": [
+                        "There is no mention of antihypertensives or diuretics in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "8": [
+                        "There is no mention of anticoagulant use in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "9": [
+                        "The patient is 53 years old, which falls within the 40 to 85 years age range.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "10": [
+                        "The patient is male, so this criterion regarding female pregnancy status is not applicable.",
+                        [],
+                        "not applicable"
+                    ],
+                    "11": [
+                        "The patient note does not mention Group 1, 2, 4, or 5 pulmonary hypertension.",
+                        [],
+                        "not enough information"
+                    ],
+                    "12": [
+                        "The patient note does not mention non-COPD related Group 3 PH.",
+                        [],
+                        "not enough information"
+                    ],
+                    "13": [
+                        "There is no mention of obstructive sleep apnea in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "14": [
+                        "There is no mention of significant left heart disease in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "15": [
+                        "There is no mention of an expected lung or heart transplant in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "16": [
+                        "There is no mention of resting oxygen saturation (SpO2) levels in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "17": [
+                        "The patient had a COPD exacerbation 4 days ago, which is within 2 months before randomization.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "18": [
+                        "There is no mention of right heart failure in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "19": [
+                        "There is no mention of uncontrolled tachyarrhythmia in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "20": [
+                        "There is no mention of acute coronary syndrome or coronary interventions in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "21": [
+                        "There is no mention of chronic renal insufficiency in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "22": [
+                        "The patient has normal liver function tests, indicating no chronic liver disease.",
+                        [
+                            3
+                        ],
+                        "included"
+                    ],
+                    "23": [
+                        "There is no mention of participation in a pulmonary rehabilitation program in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "24": [
+                        "There is no mention of impairments that limit the ability to perform the 6MWT in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "25": [
+                        "There is no mention of a history of cancer in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "26": [
+                        "There is no mention of illicit drug use or recent history of drug/alcohol abuse in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "27": [
+                        "There is no mention of PAH-specific therapies in the patient note.",
+                        [],
+                        "not enough information"
+                    ]
+                },
+                "exclusion": {
+                    "1": [
+                        "The criterion is not applicable because the patient note does not mention any exclusion criteria related to the patient's age, gender, or other demographic factors.",
+                        [],
+                        "not applicable"
+                    ],
+                    "2": [
+                        "The criterion is not applicable because the patient note does not mention any exclusion criteria related to the patient's medical history or previous treatments that are not related to COPD or PH.",
+                        [],
+                        "not applicable"
+                    ],
+                    "3": [
+                        "The criterion is not applicable because the patient note does not mention any exclusion criteria related to the patient's current medications or treatments that are not related to COPD or PH.",
+                        [],
+                        "not applicable"
+                    ],
+                    "4": [
+                        "The criterion is not applicable because the patient note does not mention any exclusion criteria related to the patient's ability to provide informed consent or comply with the trial protocol.",
+                        [],
+                        "not applicable"
+                    ],
+                    "5": [
+                        "The criterion is not applicable because the patient note does not mention any exclusion criteria related to the patient's liver function tests (LFTs) or other laboratory results.",
+                        [],
+                        "not applicable"
+                    ]
+                }
+            },
+            "NCT04901455": {
+                "inclusion": {
+                    "1": [
+                        "The patient is 53 years old, which is greater than 40 years.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "2": [
+                        "The patient has a physician diagnosis of COPD, but there is no information about post-bronchodilator testing or FEV1 values.",
+                        [
+                            1
+                        ],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "There is no information about whether the patient has been free of acute exacerbation of COPD for the prior four weeks.",
+                        [],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "There is no information about the patient's resting oxygen saturation.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "There is no information about the patient's blood pressure.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "There is no information about nasal symptoms based on a questionnaire.",
+                        [],
+                        "not enough information"
+                    ],
+                    "7": [
+                        "The patient is willing and able to participate in study procedures.",
+                        [
+                            4
+                        ],
+                        "included"
+                    ],
+                    "8": [
+                        "The patient will provide informed consent.",
+                        [
+                            4
+                        ],
+                        "included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient note states that the patient will provide informed consent and comply with the trial protocol, indicating willingness and ability to consent.",
+                        [
+                            4
+                        ],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "The patient has a 50 pack-year history of smoking, but there is no mention of active tobacco or e-cigarette use within the last six months.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "There is no mention of an active diagnosis of asthma in the patient note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "The patient note does not mention the use of any regular suppressive antibiotics.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "The patient note does not mention the use of daily oral prednisone.",
+                        [],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "The patient note does not mention the use of supplemental oxygen beyond nocturnal oxygen therapy.",
+                        [],
+                        "not excluded"
+                    ],
+                    "6": [
+                        "The patient note does not mention the use of intranasal corticosteroids in the 30 days prior to the screening visit.",
+                        [],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "The patient note does not mention any chronic illness associated with immunosuppression.",
+                        [],
+                        "not excluded"
+                    ],
+                    "8": [
+                        "The patient note does not mention a history of documented or self-reported positive SARS-CoV-2 infection requiring hospitalization.",
+                        [],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "The patient note does not mention receipt of the SARS-CoV-2 vaccine within 14 days prior to the study screening visit or plans to receive it during the study period.",
+                        [],
+                        "not excluded"
+                    ],
+                    "10": [
+                        "The patient note does not mention a history of epistaxis, prior nasal surgery, or anatomical abnormalities.",
+                        [],
+                        "not excluded"
+                    ],
+                    "11": [
+                        "The patient note does not mention the current use of blood thinners beyond full dose aspirin.",
+                        [],
+                        "not excluded"
+                    ],
+                    "12": [
+                        "The patient note does not mention a self-reported history of easy bruising or bleeding gums.",
+                        [],
+                        "not excluded"
+                    ],
+                    "13": [
+                        "The patient note does not mention serological evidence of HIV infection.",
+                        [],
+                        "not excluded"
+                    ],
+                    "14": [
+                        "The patient note does not provide information on blood counts, so we cannot determine if there is relative leukopenia, neutropenia, or lymphopenia.",
+                        [],
+                        "not enough information"
+                    ],
+                    "15": [
+                        "The patient note mentions increased SOB but does not specify a respiratory infection within the prior 4 weeks.",
+                        [
+                            0
+                        ],
+                        "not excluded"
+                    ],
+                    "16": [
+                        "The patient note does not mention active wheezing at the day 0 visit.",
+                        [],
+                        "not excluded"
+                    ],
+                    "17": [
+                        "The patient is a 53-year-old man, so pregnancy-related criteria are not applicable.",
+                        [],
+                        "not applicable"
+                    ],
+                    "18": [
+                        "The patient note does not mention the use of chronic immunosuppression in the 30 days prior to the screening visit.",
+                        [],
+                        "not excluded"
+                    ],
+                    "19": [
+                        "The patient note does not mention a history of hypersensitivity to egg proteins, gentamicin, gelatin, or arginine, or reactions to previous influenza vaccination.",
+                        [],
+                        "not excluded"
+                    ],
+                    "20": [
+                        "The patient note does not mention a history of Guillain-Barre syndrome.",
+                        [],
+                        "not excluded"
+                    ],
+                    "21": [
+                        "The patient note does not mention the inability to avoid contact with immunocompromised individuals for 3 weeks after receiving the LAIV vaccine.",
+                        [],
+                        "not excluded"
+                    ],
+                    "22": [
+                        "The patient note does not mention receipt of the LAIV during the current or prior flu vaccine season.",
+                        [],
+                        "not excluded"
+                    ],
+                    "23": [
+                        "The patient note does not mention physician-diagnosed influenza, a positive test for influenza, or suspicion of influenza illness in the 18 months prior to enrollment.",
+                        [],
+                        "not excluded"
+                    ],
+                    "24": [
+                        "The patient note does not mention any condition that would compromise the subject's ability to participate in the study.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT05878769": {
+                "inclusion": {
+                    "0": [
+                        "The inclusion criterion requires completion of the 52-week treatment period in either parent study GB43311 or GB44332. There is no information in the patient note indicating that the patient has participated in or completed these specific studies.",
+                        [],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The criterion is not applicable as it pertains to withdrawal of consent or premature discontinuation from a parent study, which is not mentioned in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "1": [
+                        "The criterion is not applicable as it pertains to permanent discontinuation of study drug in a parent study, which is not mentioned in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "2": [
+                        "The criterion is not applicable as it pertains to non-compliance in a parent study, which is not mentioned in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "3": [
+                        "There is no mention of a new diagnosis of asthma in the patient note. If the patient had a new diagnosis of asthma, it is unlikely that this would be omitted from the note, especially given the focus on respiratory issues.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "The patient note does not mention any new clinically significant pulmonary disease other than COPD. If such a condition were present, it would likely be noted given the patient's COPD history.",
+                        [],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "The patient note does not mention any new unstable cardiac disease, myocardial infarction, or heart failure. Such conditions are significant and would likely be documented if present.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT04069312": {
+                "inclusion": {
+                    "0": [
+                        "The patient note does not explicitly mention that the patient and treating clinician are considering treatment intensification with roflumilast or azithromycin. However, the patient remains symptomatic and not fully controlled on current medications, which might imply consideration for treatment intensification.",
+                        [
+                            2
+                        ],
+                        "not enough information"
+                    ],
+                    "1": [
+                        "The patient is 53 years old, which meets the age criterion of being 40 years or older.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "2": [
+                        "The patient has a 50 pack-year history of smoking, which meets the criterion of being a current or past smoker of at least 10 pack-years.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "3": [
+                        "The patient has severe COPD, but the note does not mention chronic bronchitis. However, chronic bronchitis is often associated with severe COPD, and it is possible that a good patient note might not explicitly mention it.",
+                        [
+                            1
+                        ],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "The patient was hospitalized for a COPD exacerbation recently, which meets the criterion of being hospitalized with a diagnosis of COPD exacerbation in the past 12 months.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "5": [
+                        "The patient is currently taking Spiriva (a LAMA), salmeterol (a LABA), and fluticasone (an ICS), which meets the criterion of current medications including LAMA, LABA, or ICS.",
+                        [
+                            2
+                        ],
+                        "included"
+                    ],
+                    "6": [
+                        "The patient note does not mention the language spoken by the patient. However, it is unlikely that a good patient note would miss such information if the patient did not speak English or Spanish.",
+                        [],
+                        "included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient note states that the patient will provide informed consent and comply with the trial protocol.",
+                        [
+                            4
+                        ],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "The patient note does not mention anything about the patient declining to provide a social security number or health insurance claims number.",
+                        [],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "There is no mention of any history of intolerance to azithromycin or roflumilast in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "The patient is currently taking Spiriva, salmeterol, and fluticasone, but there is no mention of long-term treatment with roflumilast or azithromycin.",
+                        [
+                            2
+                        ],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "There is no mention of known hypersensitivity to azithromycin, erythromycin, any macrolide or ketolide antibiotic in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "There is no mention of a history of cholestatic jaundice or hepatic dysfunction associated with prior use of azithromycin in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "The patient has normal liver function tests, indicating no moderate to severe liver impairment.",
+                        [
+                            3
+                        ],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "The patient is a 53-year-old man, so current pregnancy is not applicable.",
+                        [
+                            1
+                        ],
+                        "not applicable"
+                    ],
+                    "8": [
+                        "There is no mention of any other clinician-determined exclusion in the patient note.",
+                        [],
+                        "not enough information"
+                    ]
+                }
+            },
+            "NCT06075095": {
+                "inclusion": {
+                    "1": [
+                        "The patient is 53 years old, which falls within the required age range of 40 to 80 years.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "2": [
+                        "The patient has a documented history of physician-diagnosed COPD, as mentioned in the note.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "3": [
+                        "The patient is currently receiving LABA and LAMA inhaled maintenance therapies for COPD management.",
+                        [
+                            2
+                        ],
+                        "included"
+                    ],
+                    "4": [
+                        "There is no information about the patient's blood eosinophil count in the note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "There is no information about the patient's pre-bronchodilator FEV1 in the note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "There is no information about the patient's post-bronchodilator FEV1/FVC ratio or post-bronchodilator FEV1 in the note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "7": [
+                        "There is no information about the patient's pre-dose FEV1 or FEV1/FVC ratio at Visit 3 in the note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "8": [
+                        "The patient has a 50 pack-year history of smoking, which meets the criterion of at least 10 pack-years.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "9": [
+                        "The patient is willing to comply with the trial protocol, as stated in the note.",
+                        [
+                            4
+                        ],
+                        "included"
+                    ],
+                    "10": [
+                        "The criterion is not applicable as the patient is male.",
+                        [],
+                        "not applicable"
+                    ],
+                    "11": [
+                        "The patient is capable of giving signed informed consent and complying with the trial protocol.",
+                        [
+                            4
+                        ],
+                        "included"
+                    ],
+                    "12": [
+                        "There is no information about the patient's ability to demonstrate acceptable MDI administration and spirometry techniques.",
+                        [],
+                        "not enough information"
+                    ],
+                    "13": [
+                        "There is no information about the patient's compliance with placebo run-in administrations.",
+                        [],
+                        "not enough information"
+                    ],
+                    "14": [
+                        "The patient is willing to remain at the study centre as required per protocol.",
+                        [
+                            4
+                        ],
+                        "included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The exclusion criteria are related to medical conditions. The patient has severe COPD, which is the target disease for the trial, and there is no mention of other medical conditions that would exclude him. Therefore, this criterion is not applicable.",
+                        [],
+                        "not applicable"
+                    ],
+                    "1": [
+                        "There is no mention of a confirmed diagnosis of asthma in the patient note. If the patient had asthma, it is unlikely that this would be omitted given its relevance to COPD treatment. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "The patient note does not mention COPD due to \u03b11-antitrypsin deficiency. This is a specific condition that would likely be noted if present. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "The patient was hospitalized for a COPD exacerbation recently, but there is no mention of treatment with systemic corticosteroids or antibiotics. However, given the hospitalization, it is possible that such treatment occurred. Without explicit information, we cannot definitively exclude the patient based on this criterion.",
+                        [
+                            1
+                        ],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "The patient was hospitalized for a COPD exacerbation within the last 4 days, which is within 12 months prior to Visit 1. This meets the exclusion criterion.",
+                        [
+                            1
+                        ],
+                        "excluded"
+                    ],
+                    "5": [
+                        "There is no mention of a recent respiratory infection ending within 4 weeks prior to Visit 1. If such an infection had occurred, it would likely be noted due to its relevance to COPD management. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "6": [
+                        "There is no mention of life-threatening COPD requiring mechanical ventilation. Such a significant event would likely be documented. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "There is no mention of a SARS-CoV-2 infection in the patient note. Given the current medical context, such an infection would likely be noted. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "8": [
+                        "There is no mention of sleep apnea in the patient note. If the patient had uncontrolled sleep apnea, it would likely be noted due to its clinical significance. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "The patient note does not mention any other respiratory disorders such as tuberculosis, lung cancer, or others listed. These are significant conditions that would likely be documented if present. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "10": [
+                        "There is no mention of significant or unstable cardiovascular disorders in the patient note. Such conditions would likely be noted due to their clinical importance. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "11": [
+                        "There is no mention of narrow-angle glaucoma or vision changes in the patient note. These are significant conditions that would likely be documented if present. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "12": [
+                        "There is no mention of symptomatic prostatic hypertrophy or bladder neck obstruction in the patient note. These conditions would likely be noted if clinically significant. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "13": [
+                        "There is no mention of unresectable cancer in the patient note. Such a significant medical history would likely be documented. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "14": [
+                        "The patient has severe COPD, which is the target disease for the trial. There is no mention of other clinically significant diseases that would put the patient at risk. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "15": [
+                        "There is no mention of hypersensitivity to beta2-agonists, muscarinic antagonists, or corticosteroids in the patient note. Such hypersensitivities would likely be documented due to their relevance to COPD treatment. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "16": [
+                        "There is no mention of drug or alcohol abuse in the patient note. Such a history would likely be documented due to its clinical significance. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "17": [
+                        "There is no mention of a history of QT prolongation in the patient note. Such a significant medical history would likely be documented. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "18": [
+                        "There is no mention of the patient's ability to abstain from short-acting bronchodilators prior to lung function testing. This information is not provided, so we cannot determine if the patient meets this exclusion criterion.",
+                        [],
+                        "not enough information"
+                    ],
+                    "19": [
+                        "There is no mention of pulmonary resection or lung volume reduction surgery in the patient note. Such a significant surgical history would likely be documented. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "20": [
+                        "There is no mention of long-term oxygen therapy or nocturnal oxygen therapy in the patient note. Such a requirement would likely be documented due to its clinical significance. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "21": [
+                        "There is no mention of trans-urethral resection of the prostate or full resection of the prostate in the patient note. Such a surgical history would likely be documented. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "22": [
+                        "There is no mention of the patient's ability to abstain from protocol-defined prohibited medications. This information is not provided, so we cannot determine if the patient meets this exclusion criterion.",
+                        [],
+                        "not enough information"
+                    ],
+                    "23": [
+                        "There is no mention of the use of herbal products by inhalation or nebulizer in the patient note. Such use would likely be documented due to its relevance to the study. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "24": [
+                        "There is no mention of participation in another clinical study within 30 days in the patient note. Such participation would likely be documented. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "25": [
+                        "There is no mention of ECG QTcF interval measurements in the patient note. This information is not provided, so we cannot determine if the patient meets this exclusion criterion.",
+                        [],
+                        "not enough information"
+                    ],
+                    "26": [
+                        "There is no mention of high-degree atrioventricular block or sinus node dysfunction in the patient note. Such conditions would likely be documented due to their clinical significance. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "27": [
+                        "The patient note does not mention any clinically relevant abnormal findings in physical examination, clinical chemistry, haematology, urinalysis, vital signs, or ECG. Such findings would likely be documented if present. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "28": [
+                        "There is no mention of planned hospitalization during the study in the patient note. Such plans would likely be documented. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "29": [
+                        "There is no mention of involvement in the planning or conduct of the study in the patient note. Such involvement would likely be documented. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "30": [
+                        "There is no mention of the patient being a study investigator, sub-investigator, coordinator, or their employee or immediate family member. Such a relationship would likely be documented. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "31": [
+                        "The patient is noted to be willing to comply with the trial protocol without any practical issues. Therefore, the patient does not meet this exclusion criterion.",
+                        [
+                            4
+                        ],
+                        "not excluded"
+                    ],
+                    "32": [
+                        "There is no mention of previous randomization in the present study in the patient note. Such a history would likely be documented. Therefore, the patient does not meet this exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "33": [
+                        "The patient is a 53-year-old man, so the criterion for women only is not applicable.",
+                        [],
+                        "not applicable"
+                    ]
+                }
+            },
+            "NCT04302272": {
+                "inclusion": {
+                    "0": [
+                        "The patient is an adult with shortness of breath and severe COPD, which is often associated with emphysema. However, there is no direct mention of hyperinflation or evidence of low collateral ventilation in the patient note. It is possible that a good patient note might miss mentioning hyperinflation or low collateral ventilation if not specifically tested for.",
+                        [
+                            0,
+                            1
+                        ],
+                        "not enough information"
+                    ],
+                    "1": [
+                        "The patient note states that the patient will provide informed consent and comply with the trial protocol, indicating that the patient understands and is willing to sign an informed consent form.",
+                        [
+                            4
+                        ],
+                        "included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The criterion is not applicable because there is no information in the patient note about the US FDA-approved IFU requirements for SVS therapy.",
+                        [],
+                        "not applicable"
+                    ],
+                    "1": [
+                        "There is no information in the patient note indicating that the patient was previously enrolled and withdrawn from this study.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "There is no information in the patient note about incomplete screening or baseline data.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT04778046": {
+                "inclusion": {
+                    "0": [
+                        "The patient is 53 years old, which meets the age criterion of being 18 years or older.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "1": [
+                        "There is no information indicating that the patient is on the lung transplant waiting list at Duke University Medical Center.",
+                        [],
+                        "not included"
+                    ],
+                    "2": [
+                        "There is no information in the patient note about the patient having pulmonary hypertension as defined by right heart catheterization (RHC) with mPAP > 20 mmHg, PVR > 3 WU, and PCWP < 15 mmHg.",
+                        [],
+                        "not included"
+                    ],
+                    "3": [
+                        "The patient has a clinical diagnosis of COPD, but there is no information about the presence or absence of precapillary pulmonary hypertension.",
+                        [
+                            1
+                        ],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "The patient is willing and able to give informed consent and adhere to visit/protocol schedules, as stated in the patient note.",
+                        [
+                            4
+                        ],
+                        "included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The criterion is about moderate to severe heart disease. The patient note does not mention any heart disease or related conditions. If the patient had moderate to severe heart disease, it is unlikely that this would be omitted from the note, especially given the detailed medical history provided.",
+                        [],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "The criterion is about sarcoidosis. The patient note does not mention sarcoidosis. If the patient had sarcoidosis, it is unlikely that this would be omitted from the note, especially given the detailed medical history provided.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "The criterion is about active cancer. The patient note does not mention cancer. If the patient had active cancer, it is unlikely that this would be omitted from the note, especially given the detailed medical history provided.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "The criterion is about sickle cell anemia. The patient note does not mention sickle cell anemia. If the patient had sickle cell anemia, it is unlikely that this would be omitted from the note, especially given the detailed medical history provided.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "The criterion is about liver disease (Childs-Pugh class C). The patient note provides liver function test results, which are normal. This suggests that the patient does not have severe liver disease.",
+                        [
+                            3
+                        ],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "The criterion is about prisoners and pregnant women. The patient is a 53-year-old man, so this criterion is not applicable.",
+                        [
+                            1
+                        ],
+                        "not applicable"
+                    ],
+                    "6": [
+                        "The criterion is about the inability to obtain consent. The patient note states that the patient will provide informed consent and comply with the trial protocol.",
+                        [
+                            4
+                        ],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "The criterion is about conditions that will prohibit MRI scanning. The patient note does not mention any such conditions. If the patient had conditions prohibiting MRI, it is unlikely that this would be omitted from the note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "8": [
+                        "The criterion is about medical or psychological conditions that might create undue risk or interfere with protocol compliance. The patient note states that the patient will comply with the trial protocol without any practical issues, suggesting no such conditions are present.",
+                        [
+                            4
+                        ],
+                        "not excluded"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    }
+}
