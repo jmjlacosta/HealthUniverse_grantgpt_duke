@@ -24,10 +24,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-def ensure_directories():
-    """Create necessary directories for processing"""
-    os.makedirs("dataset/data", exist_ok=True)
-    os.makedirs("results", exist_ok=True)
+# def ensure_directories():
+#     """Create necessary directories for processing"""
+#     os.makedirs("dataset/data", exist_ok=True)
+#     os.makedirs("results", exist_ok=True)
 
 def save_uploaded_file(file_content: bytes, save_path: str):
     """Save uploaded file to specified path"""
@@ -73,7 +73,7 @@ async def process_trials(
     k: int = Form(20, description="Number of results to return (default is 20)")
 ):
 
-    ensure_directories()
+    # ensure_directories()
     clear_corpus_folder()
 
     bm25_weight = 1.0
@@ -135,7 +135,7 @@ async def download_results():
         raise HTTPException(status_code=404, detail="Results file not found")
     return FileResponse(zip_path, filename="results.zip", media_type="application/zip")
 
-@app.on_event("startup")
-async def startup_event():
-    """Initialize necessary directories on startup"""
-    ensure_directories()
+# @app.on_event("startup")
+# async def startup_event():
+#     """Initialize necessary directories on startup"""
+#     ensure_directories()
