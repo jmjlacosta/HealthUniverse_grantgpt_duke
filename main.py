@@ -1,4 +1,4 @@
-from typing import Annotated, Literal, Optional
+from typing import Annotated, Literal
 from fastapi import FastAPI, UploadFile, HTTPException, File, Form
 from fastapi.responses import JSONResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
@@ -111,7 +111,7 @@ async def process_trials(
 
     try:
         # Run the complete pipeline
-        await run_pipeline(k, bm25_weight, medcpt_weight)
+        run_pipeline(k, bm25_weight, medcpt_weight)
 
         # Read ranking results
         ranking_path = "dataset/data/1_FINAL_ranking_results.txt"
