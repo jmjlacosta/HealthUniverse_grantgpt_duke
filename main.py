@@ -67,10 +67,10 @@ corpus_base_path = "duke_corpus"
 
 @app.post("/process-trials")
 async def process_trials(
-    corpus: Annotated[Literal["Duke - All Trials", "Duke - Oncology Trials", "Duke - COPD Trials"], Form(...)],
-    patient_id: Annotated[str, Form(...)],
-    queries: Annotated[str, Form(...)],
-    k: Annotated[int, Form(20)],
+    corpus: Annotated[Literal["Duke - All Trials", "Duke - Oncology Trials", "Duke - COPD Trials"], Form(..., description="Select the clinical trial dataset you want to process: 'All Trials' (comprehensive dataset), 'Oncology Trials' (cancer-related trials), or 'COPD Trials' (chronic obstructive pulmonary disease-related trials)")],
+    patient_id: Annotated[str, Form(..., description="Unique identifier for the patient (e.g., 'patient123')")],
+    queries: Annotated[str, Form(..., description="Narrative or medical history of the patient to be processed")],
+    k: Annotated[int, Form(20, description="Number of results to return (default is 20)")],
 ):
 
     ensure_directories()
