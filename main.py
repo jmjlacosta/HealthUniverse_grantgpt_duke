@@ -1,4 +1,3 @@
-from typing import Annotated, Literal
 from fastapi import FastAPI, UploadFile, HTTPException, File, Form
 from fastapi.responses import JSONResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
@@ -6,7 +5,7 @@ import subprocess
 import os
 import zipfile
 from io import BytesIO
-from typing import Literal
+from typing import Literal, Annotated
 import shutil
 
 from create_query import create_jsonl_entry, generate_jsonl_file
@@ -68,16 +67,13 @@ corpus_base_path = "duke_corpus"
 
 @app.post("/process-trials")
 async def process_trials(
-    corpus: Annotated[
-        Literal["Duke - All Trials", "Duke - Oncology Trials", "Duke - COPD Trials"], 
-        Form(..., description="Select the clinical trial dataset you want to process: 'All Trials' (comprehensive dataset), 'Oncology Trials' (cancer-related trials), or 'COPD Trials' (chronic obstructive pulmonary disease-related trials)")
-    ],
-    patient_id: Annotated[str, Form(..., description="Unique identifier for the patient (e.g., 'patient123')")],
-    queries: Annotated[str, Form(..., description="Narrative or medical history of the patient to be processed")],
-    k: Annotated[int, Form(20, description="Number of results to return (default is 20)")]
+    corpus: Annotated[Literal["Duke - All Trials", "Duke - Oncology Trials", "Duke - COPD Trials"], Form(...)],
+    patient_id: Annotated[str, Form(...)],
+    queries: Annotated[str, Form(...)],
+    k: Annotated[int, Form(20)],
 ):
 
-    # ensure_directories() #Duplicated
+    ensure_directories()
     clear_corpus_folder()
 
     bm25_weight = 1.0
@@ -97,11 +93,7 @@ async def process_trials(
     corpus_file_path = os.path.join(corpus_base_path, selected_corpus_folder, "corpus.jsonl")
 
     #  copy corpus file into the dataset/data folder
-    try:
-        shutil.copy(corpus_file_path, "dataset/data/corpus.jsonl")
-    except FileNotFoundError:
-        raise HTTPException(status_code=400, detail="Corpus file not found")
-
+    shutil.copy(corpus_file_path, "dataset/data/corpus.jsonl")
 
     # Save queries to dataset folder as JSONL
     queries_jsonl_bytes = generate_jsonl_file(patient_id, queries)  # Using the queries string
