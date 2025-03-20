@@ -11,7 +11,7 @@ import shutil
 from create_query import create_jsonl_entry, generate_jsonl_file
 
 app = FastAPI(
-    title="Lite TrialGPT Tool: Duke Clinical Studies",
+    title="TrialGPT Tool: Duke Clinical Studies",
     description="API for matching patients to clinical trials using Large Language Models",
     version="1.0.0",
 )
@@ -70,10 +70,14 @@ async def process_trials(
     corpus: Annotated[Literal["Duke - All Trials", "Duke - Oncology Trials", "Duke - COPD Trials"], Form(..., description="Select the clinical trial dataset you want to process: 'All Trials' (comprehensive dataset), 'Oncology Trials' (cancer-related trials), or 'COPD Trials' (chronic obstructive pulmonary disease-related trials)")],
     patient_id: Annotated[str, Form(..., description="Unique identifier for the patient (e.g., 'patient123')")],
     queries: Annotated[str, Form(..., description="Narrative or medical history of the patient to be processed")],
-    k: Annotated[int, Form(20, description="Number of results to return (default is 20)")],
+    k: Annotated[str, Form(..., description="Number of results to return (default is 20)")] = "20",
 ):
 
-#     ensure_directories()
+    try: 
+        k = int(k)
+    except:
+        k = 20
+    # ensure_directories()
     clear_corpus_folder()
 
     bm25_weight = 1.0
@@ -93,7 +97,11 @@ async def process_trials(
     corpus_file_path = os.path.join(corpus_base_path, selected_corpus_folder, "corpus.jsonl")
 
     #  copy corpus file into the dataset/data folder
-    shutil.copy(corpus_file_path, "dataset/data/corpus.jsonl")
+    try:
+        shutil.copy(corpus_file_path, "dataset/data/corpus.jsonl")
+    except FileNotFoundError:
+        raise HTTPException(status_code=400, detail="Corpus file not found")
+
 
     # Save queries to dataset folder as JSONL
     queries_jsonl_bytes = generate_jsonl_file(patient_id, queries)  # Using the queries string
@@ -103,7 +111,7 @@ async def process_trials(
 
     try:
         # Run the complete pipeline
-        run_pipeline(k, bm25_weight, medcpt_weight)
+        await run_pipeline(k, bm25_weight, medcpt_weight)
 
         # Read ranking results
         ranking_path = "dataset/data/1_FINAL_ranking_results.txt"
