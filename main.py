@@ -46,16 +46,16 @@ def run_pipeline(k: int, bm25_weight: float, medcpt_weight: float):
     """Run the complete TrialGPT pipeline"""
     steps = [
         (["python", "trialgpt_retrieval/keyword_generation.py"], "Keyword generation failed"),
-        (["python", "trialgpt_retrieval/hybrid_fusion_retrieval.py", "data", "gpt-4o",
-          str(k), str(int(bm25_weight)), str(int(medcpt_weight))], "Hybrid fusion retrieval failed"),
-        (["python", "trialgpt_retrieval/retrieval.py", "dataset/data/qid2nctids_results.json"],
-         "Retrieved trials failed"),
-        (["python", "trialgpt_matching/run_matching.py", "data", "gpt-4o"], "Matching failed"),
-        (["python", "trialgpt_matching/generate_trial_info.py", "data"], "Trial info generation failed"),
-        (["python", "trialgpt_ranking/run_aggregation.py", "data", "gpt-4o",
-          "dataset/data/matching_results.json"], "Aggregation failed"),
-        (["python", "trialgpt_ranking/rank_results.py", "dataset/data/matching_results.json",
-          "dataset/data/aggregation_results.json"], "Final ranking failed")
+        # (["python", "trialgpt_retrieval/hybrid_fusion_retrieval.py", "data", "gpt-4o",
+        #   str(k), str(int(bm25_weight)), str(int(medcpt_weight))], "Hybrid fusion retrieval failed"),
+        # (["python", "trialgpt_retrieval/retrieval.py", "dataset/data/qid2nctids_results.json"],
+        #  "Retrieved trials failed"),
+        # (["python", "trialgpt_matching/run_matching.py", "data", "gpt-4o"], "Matching failed"),
+        # (["python", "trialgpt_matching/generate_trial_info.py", "data"], "Trial info generation failed"),
+        # (["python", "trialgpt_ranking/run_aggregation.py", "data", "gpt-4o",
+        #   "dataset/data/matching_results.json"], "Aggregation failed"),
+        # (["python", "trialgpt_ranking/rank_results.py", "dataset/data/matching_results.json",
+        #   "dataset/data/aggregation_results.json"], "Final ranking failed")
     ]
 
     for command, error_message in steps:
