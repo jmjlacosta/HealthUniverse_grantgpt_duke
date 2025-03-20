@@ -46,16 +46,16 @@ def run_pipeline(k: int, bm25_weight: float, medcpt_weight: float):
     """Run the complete TrialGPT pipeline"""
     steps = [
         (["python", "trialgpt_retrieval/keyword_generation.py"], "Keyword generation failed"),
-        # (["python", "trialgpt_retrieval/hybrid_fusion_retrieval.py", "data", "gpt-4o",
-        #   str(k), str(int(bm25_weight)), str(int(medcpt_weight))], "Hybrid fusion retrieval failed"),
-        # (["python", "trialgpt_retrieval/retrieval.py", "dataset/data/qid2nctids_results.json"],
-        #  "Retrieved trials failed"),
-        # (["python", "trialgpt_matching/run_matching.py", "data", "gpt-4o"], "Matching failed"),
-        # (["python", "trialgpt_matching/generate_trial_info.py", "data"], "Trial info generation failed"),
-        # (["python", "trialgpt_ranking/run_aggregation.py", "data", "gpt-4o",
-        #   "dataset/data/matching_results.json"], "Aggregation failed"),
-        # (["python", "trialgpt_ranking/rank_results.py", "dataset/data/matching_results.json",
-        #   "dataset/data/aggregation_results.json"], "Final ranking failed")
+        (["python", "trialgpt_retrieval/hybrid_fusion_retrieval.py", "data", "gpt-4o",
+          str(k), str(int(bm25_weight)), str(int(medcpt_weight))], "Hybrid fusion retrieval failed"),
+        (["python", "trialgpt_retrieval/retrieval.py", "dataset/data/qid2nctids_results.json"],
+         "Retrieved trials failed"),
+        (["python", "trialgpt_matching/run_matching.py", "data", "gpt-4o"], "Matching failed"),
+        (["python", "trialgpt_matching/generate_trial_info.py", "data"], "Trial info generation failed"),
+        (["python", "trialgpt_ranking/run_aggregation.py", "data", "gpt-4o",
+          "dataset/data/matching_results.json"], "Aggregation failed"),
+        (["python", "trialgpt_ranking/rank_results.py", "dataset/data/matching_results.json",
+          "dataset/data/aggregation_results.json"], "Final ranking failed")
     ]
 
     for command, error_message in steps:
@@ -93,7 +93,11 @@ async def process_trials(
     corpus_file_path = os.path.join(corpus_base_path, selected_corpus_folder, "corpus.jsonl")
 
     #  copy corpus file into the dataset/data folder
-    shutil.copy(corpus_file_path, "dataset/data/corpus.jsonl")
+    try:
+        shutil.copy(corpus_file_path, "dataset/data/corpus.jsonl")
+    except FileNotFoundError:
+        raise HTTPException(status_code=400, detail="Corpus file not found")
+
 
     # Save queries to dataset folder as JSONL
     queries_jsonl_bytes = generate_jsonl_file(patient_id, queries)  # Using the queries string
@@ -103,7 +107,7 @@ async def process_trials(
 
     try:
         # Run the complete pipeline
-        run_pipeline(k, bm25_weight, medcpt_weight)
+        await run_pipeline(k, bm25_weight, medcpt_weight)
 
         # Read ranking results
         ranking_path = "dataset/data/1_FINAL_ranking_results.txt"
