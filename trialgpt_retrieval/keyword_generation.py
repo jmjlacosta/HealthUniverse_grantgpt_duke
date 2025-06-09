@@ -1,7 +1,7 @@
 __author__ = "qiao"
 
 """
-generate the search keywords for each patient
+Generate search keywords for each researcher profile.
 """
 
 import json
@@ -13,10 +13,17 @@ import sys
 openai.api_key = os.getenv("API_KEY")
 
 
-def get_keyword_generation_messages(note):
-	system = 'You are a helpful assistant and your task is to help search relevant clinical trials for a given patient description. Please first summarize the main medical problems of the patient. Then generate up to 32 key conditions for searching relevant clinical trials for this patient. The key condition list should be ranked by priority. Please output only a JSON dict formatted as Dict{{"summary": Str(summary), "conditions": List[Str(condition)]}}.'
+def get_keyword_generation_messages(profile):
+        system = (
+            'You are a helpful assistant and your task is to help search relevant '
+            'grants for a given researcher profile. Please first summarize the main '
+            'research interests and expertise. Then generate up to 32 key research '
+            'topics for searching relevant grants for this researcher. The key topic '
+            'list should be ranked by priority. Please output only a JSON dict formatted '
+            'as Dict{"summary": Str(summary), "keywords": List[Str(keyword)]}}.'
+        )
 
-	prompt =  f"Here is the patient description: \n{note}\n\nJSON output:"
+        prompt =  f"Here is the researcher profile: \n{profile}\n\nJSON output:"
 
 
 	messages = [

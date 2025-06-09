@@ -1,10 +1,10 @@
 import json
 
-# File paths
-queries_file = "dataset/data/queries.jsonl"
-corpus_file = "dataset/data/corpus.jsonl"
-qid2nctids_results_file = "dataset/data/qid2nctids_results.json"
-output_file = "dataset/data/retrieved_trials.json"
+# File paths for grant retrieval
+queries_file = "dataset/grants/researchers.jsonl"
+corpus_file = "dataset/grants/grants.jsonl"
+qid2nctids_results_file = "dataset/grants/qid2grantids_results.json"
+output_file = "dataset/grants/retrieved_grants.json"
 
 # Load queries.jsonl (line by line)
 with open(queries_file, "r") as f:
@@ -16,8 +16,8 @@ with open(queries_file, "r") as f:
 # Load corpus.jsonl (line by line)
 with open(corpus_file, "r") as f:
     corpus_data = {
-        json.loads(line)['_id']: {
-            k: json.loads(line)[k] for k in json.loads(line) if k != '_id'
+        json.loads(line)['grant_id']: {
+            k: json.loads(line)[k] for k in json.loads(line) if k != 'grant_id'
         }
         for line in f
     }
@@ -29,23 +29,22 @@ with open(qid2nctids_results_file, "r") as f:
 # Process retrieved trials
 retrieved_trials = []
 
-for patient in qid2nctids_results:
-    if patient in queries_data:
-        print(patient)  # Debugging: See which patient is processed
-        valid_nctids = []
-        
-        for nctid in qid2nctids_results[patient]:
-            if nctid in corpus_data:
-                nctid_metadata = corpus_data[nctid]['metadata']
-                nctid_metadata['NCTID'] = nctid
-                valid_nctids.append(nctid_metadata)
+for researcher in qid2nctids_results:
+    if researcher in queries_data:
+        valid_grants = []
 
-        patient_retrieved_trial = {
-            "patient_id": patient,
-            "patient": queries_data[patient]['text'],
-            "0": valid_nctids
+        for gid in qid2nctids_results[researcher]:
+            if gid in corpus_data:
+                grant_info = corpus_data[gid]
+                grant_info['grant_id'] = gid
+                valid_grants.append(grant_info)
+
+        researcher_retrieved = {
+            "researcher_id": researcher,
+            "researcher": queries_data[researcher]['text'],
+            "grants": valid_grants
         }
-        retrieved_trials.append(patient_retrieved_trial)
+        retrieved_trials.append(researcher_retrieved)
 
 # Save results to retrieved_trials.json
 with open(output_file, "w") as f:

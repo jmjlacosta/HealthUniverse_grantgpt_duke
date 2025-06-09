@@ -12,50 +12,41 @@ import sys
 from TrialGPT import trialgpt_matching 
 
 if __name__ == "__main__":
-	corpus = sys.argv[1]
-	model = sys.argv[2] 
-	
-	dataset = json.load(open(f"dataset/data/retrieved_trials.json"))
+        model = sys.argv[1]
 
-	output_path = f"dataset/data/matching_results.json" 
+        dataset = json.load(open("dataset/grants/retrieved_grants.json"))
 
-	# Dict{Str(patient_id): Dict{Str(label): Dict{Str(trial_id): Str(output)}}}
-	if os.path.exists(output_path):
-		output = json.load(open(output_path))
-	else:
-		output = {}
+        output_path = "dataset/grants/matching_results.json"
 
-	for instance in dataset:
-		# Dict{'patient': Str(patient), '0': Str(NCTID), ...}
-		patient_id = instance["patient_id"]
-		patient = instance["patient"]
-		sents = sent_tokenize(patient)
-		sents.append("The patient will provide informed consent, and will comply with the trial protocol without any practical issues.")
-		sents = [f"{idx}. {sent}" for idx, sent in enumerate(sents)]
-		patient = "\n".join(sents)
+        # Dict{researcher_id: Dict{grant_id: results}}
+        if os.path.exists(output_path):
+                output = json.load(open(output_path))
+        else:
+                output = {}
 
-		# initialize the patient id in the output 
-		if patient_id not in output:
-			output[patient_id] = {"0": {}, "1": {}, "2": {}}
-		
-		for label in ["2", "1", "0"]:
-			if label not in instance: continue
+        for instance in dataset:
+                researcher_id = instance["researcher_id"]
+                researcher = instance["researcher"]
+                sents = sent_tokenize(researcher)
+                sents = [f"{idx}. {sent}" for idx, sent in enumerate(sents)]
+                researcher = "\n".join(sents)
 
-			for trial in instance[label]: 
-				trial_id = trial["NCTID"]
+                if researcher_id not in output:
+                        output[researcher_id] = {}
 
-				# already calculated and cached
-				if trial_id in output[patient_id][label]:
-					continue
-				
-				# in case anything goes wrong (e.g., API calling errors)
-				try:
-					results = trialgpt_matching(trial, patient, model)
-					output[patient_id][label][trial_id] = results
+                for grant in instance.get("grants", []):
+                        grant_id = grant["grant_id"]
 
-					with open(output_path, "w") as f:
-						json.dump(output, f, indent=4)
+                        if grant_id in output[researcher_id]:
+                                continue
 
-				except Exception as e:
-					print(e)
-					continue
+                        try:
+                                results = trialgpt_matching(grant, researcher, model)
+                                output[researcher_id][grant_id] = results
+
+                                with open(output_path, "w") as f:
+                                        json.dump(output, f, indent=4)
+
+                        except Exception as e:
+                                print(e)
+                                continue
